@@ -1,0 +1,5 @@
+{
+  "name": "moon-demo",
+  "private": true,
+  "packageManager": "pnpm@12.2.1"
+}

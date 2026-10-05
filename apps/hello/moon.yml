@@ -1,0 +1,15 @@
+$schema: "https://moonrepo.dev/schemas/project.json"
+
+language: "javascript"
+toolchains:
+  default: "node"
+
+tasks:
+  build:
+    command: "node src/index.js"
+    inputs:
+      - "src/**/*"
+  versions:
+    command: 'bash -c "node --version && pnpm --version"'
+    options:
+      cache: false
