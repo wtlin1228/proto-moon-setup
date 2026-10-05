@@ -1,0 +1,8 @@
+# Required: copied by `COPY .moon/`, changes on every moon run.
+.moon/cache/
+
+# Not copied by this Dockerfile, but `docker build` uploads the whole
+# directory as build context before any COPY runs. Excluding these keeps
+# that upload small in a real repo.
+node_modules
+.git
